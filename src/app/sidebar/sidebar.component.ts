@@ -1,8 +1,8 @@
-import { Component, Output, EventEmitter, HostBinding, Input } from '@angular/core';
-import { SettingsService } from '../services/settings/settings.service';
+import { Component, EventEmitter, HostBinding, Input, Output } from '@angular/core';
+import { Router } from '@angular/router';
 import { NovoFormGroup } from 'novo-elements';
 import { SearchService } from '../services/search/search.service';
-import { Router } from '@angular/router';
+import { SettingsService } from '../services/settings/settings.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -24,7 +24,8 @@ export class SidebarComponent {
   public loading: boolean = false;
   public filter: object = {};
   public showPrivacyPolicy: boolean = SettingsService.settings.privacyConsent.sidebarLink;
-
+  public showEmploymentTypeFilter: boolean = SettingsService.settings.service.showEmploymentTypeFilter;
+  
   constructor(private searchService: SearchService, private router: Router) {}
 
   public searchOnDelay(): void {

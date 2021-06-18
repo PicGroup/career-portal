@@ -25,6 +25,7 @@ interface IServiceSettings {
   fields: string[];
   jobInfoChips: [string | JobChipField] | any;
   showCategory: boolean;
+  showEmploymentTypeFilter: boolean;
   keywordSearchFields: string[];
 }
 

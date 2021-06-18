@@ -28,6 +28,7 @@
   "CITY": "City",
   "STATE": "State",
   "CATEGORY": "Category",
+  "EMPLOYMENT_TYPE": "Employment Type",
   "EEOC" : {
     "EEOC_FORM_DESCRIPTION": "Voluntary Self-Identification Form for Race, Gender and Ethnicity",
     "GENDER_LABEL": "Gender",

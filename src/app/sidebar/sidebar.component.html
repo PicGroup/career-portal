@@ -10,6 +10,7 @@
     <app-sidebar-filter field="publishedCategory(id,name)" title="{{ 'CATEGORY' | translate}}" [filter]="filter" (checkboxFilter)="updateFilter('publishedCategory', $event)" ></app-sidebar-filter>
     <app-sidebar-filter field="address(state)" title="{{ 'STATE' | translate}}" [filter]="filter" (checkboxFilter)="updateFilter('address(state)', $event)"></app-sidebar-filter>
     <app-sidebar-filter field="address(city)" title="{{ 'CITY' | translate}}" [filter]="filter" (checkboxFilter)="updateFilter('address(city)', $event)"></app-sidebar-filter>
+    <app-sidebar-filter *ngIf="showEmploymentTypeFilter" field="employmentType" title="{{ 'EMPLOYMENT_TYPE' | translate}}" [filter]="filter" (checkboxFilter)="updateFilter('employmentType', $event)"></app-sidebar-filter>
   </div>
 </ng-container>
 
