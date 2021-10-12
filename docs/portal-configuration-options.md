@@ -22,6 +22,7 @@ The portal is configurable without modifying code. The options are found in the 
 | jobInfoChips | list of fields displayed on the job as the grey "chips". If the field is not available from the API request, please add it to the "fields" option. If the field does not display in the API request, please contact Bullhorn Support so they can complete the necessary steps on their end to get the fields to display|
 | fields | Fields that are requested from Bullhorn in API calls.|
 | showCategory | Determines whether or not the category field will show on the job list entry/job .|
+| showPublishedCategoryFilter | Determines whether or not the Published Category search filter will show on the side bar.|
 | showEmploymentTypeFilter | Determines whether or not the Employment Type search filter will show on the side bar.|
 | keywordSearchFields | allows you to change which fields are available to keyword search. |
 | field | Additional field to narrow down the jobs in the job list. Example: If you wanted to use two portals and each with different jobs, you can have one portal use customText2 with values A, B, and C and the other use customText2 with values C, D, and E |

@@ -25,7 +25,8 @@ export class SidebarComponent {
   public filter: object = {};
   public showPrivacyPolicy: boolean = SettingsService.settings.privacyConsent.sidebarLink;
   public showEmploymentTypeFilter: boolean = SettingsService.settings.service.showEmploymentTypeFilter;
-  
+  public showPublishedCategoryFilter: boolean = SettingsService.settings.service.showPublishedCategoryFilter;
+
   constructor(private searchService: SearchService, private router: Router) {}
 
   public searchOnDelay(): void {
