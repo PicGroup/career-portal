@@ -1,22 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  NovoFormGroup,
-  FormUtils,
-  NovoModalRef,
-  NovoModalParams,
-  TextBoxControl,
-  FileControl,
-  PickerControl,
-  SelectControl,
-  NovoToastService,
-  CheckboxControl,
-  FieldInteractionApi,
-} from 'novo-elements';
+import { Router } from '@angular/router';
 import { TranslateService } from 'chomsky';
-import { SettingsService } from '../services/settings/settings.service';
+import {
+  CheckboxControl,
+  FieldInteractionApi, FileControl, FormUtils, NovoFormGroup, NovoModalParams, NovoModalRef, NovoToastService, PickerControl,
+  SelectControl, TextBoxControl
+} from 'novo-elements';
 import { AnalyticsService } from '../services/analytics/analytics.service';
 import { ApplyService } from '../services/apply/apply.service';
-import { Router } from '@angular/router';
+import { SettingsService } from '../services/settings/settings.service';
 
 @Component({
   selector: 'app-apply-modal',
@@ -58,6 +50,8 @@ export class ApplyModalComponent implements OnInit {
   public ngOnInit(): void {
     this.job = this.params['job'];
     this.source = this.params['source'];
+    console.log('Test...');
+    console.log('source: ' +  this.source);
     this.setupForm();
   }
   public setupForm(): void {
