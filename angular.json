@@ -113,7 +113,7 @@
             },
             "opportunity": {
               "optimization": true,
-              "outputHashing": "bundles",
+              "outputHashing": "none",
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
