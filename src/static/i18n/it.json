@@ -28,6 +28,7 @@
   "CITY": "Città",
   "STATE": "Stato",
   "CATEGORY": "Categoria",
+  "EMPLOYMENT_TYPE": "Tipo di impiego",
   "EEOC" : {
     "EEOC_FORM_DESCRIPTION": "Dichiarazione volontaria di razza, sesso ed etnia",
     "GENDER_LABEL": "Sesso",

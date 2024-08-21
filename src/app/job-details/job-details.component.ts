@@ -1,16 +1,16 @@
 import { Component, OnInit, ViewContainerRef } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
-import { SearchService } from '../services/search/search.service';
-import { NovoModalService } from 'novo-elements';
-import { SettingsService } from '../services/settings/settings.service';
-import { AnalyticsService } from '../services/analytics/analytics.service';
-import { ApplyModalComponent } from '../apply-modal/apply-modal.component';
-import { ShareService } from '../services/share/share.service';
-import { ErrorModalComponent } from '../error-modal/error-modal.component';
-import { Title, Meta } from '@angular/platform-browser';
 import { JobBoardPost } from '@bullhorn/bullhorn-types';
-import { ServerResponseService } from '../services/server-response/server-response.service';
 import { TranslateService } from 'chomsky';
+import { NovoModalService } from 'novo-elements';
+import { ApplyModalComponent } from '../apply-modal/apply-modal.component';
+import { ErrorModalComponent } from '../error-modal/error-modal.component';
+import { AnalyticsService } from '../services/analytics/analytics.service';
+import { SearchService } from '../services/search/search.service';
+import { ServerResponseService } from '../services/server-response/server-response.service';
+import { SettingsService } from '../services/settings/settings.service';
+import { ShareService } from '../services/share/share.service';
 
 @Component({
   selector: 'app-job-details',
@@ -52,6 +52,8 @@ export class JobDetailsComponent implements OnInit {
     this.loading = true;
     this.id = this.route.snapshot.paramMap.get('id');
     this.source = this.route.snapshot.queryParams.source;
+    console.log('Next Source ');
+    console.log('Source ', this.source);
     this.analytics.trackEvent(`Open Job: ${this.id}`);
     this.checkSessionStorage();
     this.setJob();

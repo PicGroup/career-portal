@@ -28,6 +28,7 @@
   "CITY": "Municipio",
   "STATE": "Estado/Provincia",
   "CATEGORY": "Categoría",
+  "EMPLOYMENT_TYPE": "Tipo de empleo",
   "EEOC" : {
     "EEOC_FORM_DESCRIPTION": "Formulario de autoidentificación voluntaria para raza, género y etnia",
     "GENDER_LABEL": "Género",

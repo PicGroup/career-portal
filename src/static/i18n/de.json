@@ -28,6 +28,7 @@
   "CITY": "Stadt",
   "STATE": "Bundesland",
   "CATEGORY": "Berufsfeld",
+  "EMPLOYMENT_TYPE": "Beschäftigungsverhältnis",
   "EEOC" : {
     "EEOC_FORM_DESCRIPTION": "Voluntary Self-Identification Form for Race, Gender and Ethnicity",
     "GENDER_LABEL": "Geschlecht",

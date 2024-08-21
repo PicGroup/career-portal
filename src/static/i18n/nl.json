@@ -28,6 +28,7 @@
   "CITY": "Plaats",
   "STATE": "Provincie",
   "CATEGORY": "Categorie",
+  "EMPLOYMENT_TYPE": "Soort dienstverband",
   "EEOC" : {
     "EEOC_FORM_DESCRIPTION": "Vrijwillig zelfidentificatieformulier voor ras, geslacht en etniciteit",
     "GENDER_LABEL": "Geslacht",
