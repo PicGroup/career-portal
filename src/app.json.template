@@ -58,6 +58,8 @@
       }
     ],
     "showCategory": true,
+    "showPublishedCategoryFilter": false,
+    "showEmploymentTypeFilter": false,
     "keywordSearchFields": [
       "publicDescription",
       "title"

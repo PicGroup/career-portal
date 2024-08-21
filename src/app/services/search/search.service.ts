@@ -71,6 +71,9 @@ export class SearchService {
       case 'address(city)':
         params.orderBy = 'address.city';
         break;
+      case 'employmentType':
+        params.orderBy = 'employmentType';
+        break;
       default:
         params.orderBy = '-count.id';
         break;

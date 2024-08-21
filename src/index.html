@@ -2,12 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  
   <title>Career Portal</title>
-  <base href="/">
+  <base href=".">
   <link rel="stylesheet" href="./static/custom.css" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+<!-- added by Jeff.Jones@picworld.com on 03-13-2023 -->
+<!-- Google tag (gtag.js)  Google Analytics UA version 3 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137943259-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-137943259-1');
+</script>
+<!-- Google tag (gtag.js)  Google Analytics UA version 3 -->
+
 </head>
 <body>
   <app-root><novo-loading style="position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;display: flex;justify-content: center;align-items: center;">
@@ -18,18 +35,41 @@
     <span class="dot"></span>
   </novo-loading>
 </app-root>
-<script>
-  (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+<!-- added by Jeff.Jones@picworld.com on 03-13-2023 -->
+<!-- Custom PIC Job Apply Now Google Analytics Click Tracker -->
+<!-- target https://www.picgroupinc.com/jobs/#/jobs/8136 -->
+<script type="text/javascript">
+console.log('*** WPCode GLOBAL HEADER ***');
+// Define Handler
+var picCustomJobApply = function() {
+	console.log('picCustomJobApply');
+	// template <button onclick="ga('send', 'event', [eventCategory], [eventAction], [eventLabel], [eventValue], [fieldsObject]);">Example Button Text</button>
+	ga('send', 'event', 'ApplyNow', 'AppyNow Button Clicked', 'AppyNow Button Clicked', 'AppyNow Button Clicked', null);
+	document.location.href='https://www.picgroupinc.com/thank-you/';
+}
+// Define Timer
+function picCustomJobApplyTimer() {
+	// Locate Button on Page
+	console.log("picCustomJobApplyTimer");
+	var btn = document.querySelector("button[icon=bhi-check]");
+	if (btn) {
+		// Modfy only if not modified before (loop protection)
+		if (btn.style.marginLeft != '1px') {
+			// Add Event Listener Click
+			console.log("addEventListener");
+			btn.addEventListener("click", picCustomJobApply, false);
+			btn.onclick = picCustomJobApply;
+			btn.style.marginLeft = "1px";
+		}
+	}
+}
+// Only For URL /opportunities/
+if (document.location.href.toLowerCase().indexOf('/jobs/') > 0) {
+	window.setInterval(picCustomJobApplyTimer, 500);
+}
 </script>
+<!-- Custom PIC Job Apply Now Google Analytics Click Tracker -->
+
 </body>
 </html>
